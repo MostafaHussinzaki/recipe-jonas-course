@@ -1,0 +1,23 @@
+{
+  "name": "frokify",
+  "version": "1.0.0",
+  "description": "Recipe Applecation",
+  "default": "index.html",
+  "scripts": {
+    "build": "parcel build index.html --dist-dir ./dist",
+    "cleanup": "rmdir /q /s .parcel-cache dist || echo 'no cached files'",
+    "start": "npm run cleanup && parcel ./index.html"
+  },
+  "author": "Mostafa hussin",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.0",
+    "parcel": "^2.10.0",
+    "url": "^0.11.3"
+  },
+  "dependencies": {
+    "core-js": "^3.33.1",
+    "fracty": "^1.0.11",
+    "regenerator-runtime": "^0.14.0"
+  }
+}
